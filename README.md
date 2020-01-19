@@ -2,7 +2,9 @@
 
 ## Installing
 
-[![Clojars Project](http://clojars.org/cljs-react-test/latest-version.svg)](http://clojars.org/cljs-react-test)
+*Note: This is a fork of the original `cljs-react-test` project, which is updated to work with the new versions of React*
+
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.mihaelkonjevic/cljs-react-test.svg)](https://clojars.org/org.clojars.mihaelkonjevic/cljs-react-test)
 
     (:require [cljs-react-test.simulate :as sim]
               [cljs-react-test.utils :as tu])
@@ -12,9 +14,9 @@ that depend on different versions of React (addons vs no addons). The following
 very explicit configuration should work:
 
 ```clj
-(:dependencies [cljs-react-test "0.1.4-SNAPSHOT"]
-               [cljsjs/react-with-addons "15.2.0-0"]
-               [cljsjs/react-dom "15.2.0-0" :exclusions [cljsjs/react]])
+(:dependencies [cljs-react-test "0.1.6]
+               [cljsjs/react-with-addons "16.12.0-1"]
+               [cljsjs/react-dom "16.12.0-1" :exclusions [cljsjs/react]])
 ```
 
 ## Description
@@ -152,7 +154,7 @@ Pull requests, issues, and feedback welcome.
 
 ## License
 
-Copyright © 2016 Sebastian Bensusan
+Copyright © 2016 - 2020 Sebastian Bensusan, Mihael Konjevic
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

@@ -1,7 +1,8 @@
 (ns cljs-react-test.utils
   "Provides common testing functions"
   (:require [cljsjs.react.dom]
-            [cljsjs.react]))
+            [cljsjs.react]
+            [cljsjs.react.dom.test-utils]))
 
 ;; General Utils
 
@@ -35,7 +36,7 @@
 
 ;; Rest of API for completion's sake:
 
-(def TestUtils js/React.addons.TestUtils)
+(def TestUtils js/ReactTestUtils)
 
 (defn render-in-dom [react-element]
   (.renderIntoDocument TestUtils react-element))
